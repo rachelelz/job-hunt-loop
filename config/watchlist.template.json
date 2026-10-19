@@ -1,0 +1,23 @@
+{
+  "_help": [
+    "Companies whose job boards the loop polls every run. REPLACE the keywords and boards below with yours; the shipped values are only an example.",
+    "Find a company's vendor and slug with: python3 scripts/probe_board.py <slug> (run from the skill folder). The slug is the company's name as it appears in its apply links (jobs.lever.co/<slug>, boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, <slug>.recruitee.com, apply.workable.com/<slug>).",
+    "Matching: a posting is shown when its title contains any title_keyword as a whole word, none of title_exclude, and its location contains any location_keyword as a whole word. A posting the vendor marks remote with an empty location passes the location filter if 'remote' is in location_keywords. To get 'remote EU only', list the countries or regions you accept; 'remote' alone also lets in remote roles in other countries.",
+    "careers_pages are NOT polled by the script; the loop opens them in a browser, oldest last_checked first. Set carryover to true on a page you want opened every run.",
+    "vendor is one of: greenhouse, lever, lever-eu, ashby, recruitee, workable."
+  ],
+
+  "title_keywords": ["engineer", "developer", "backend", "platform"],
+  "title_exclude": ["intern", "internship", "working student", "manager"],
+  "location_keywords": ["berlin", "germany", "remote", "europe", "eu", "emea"],
+
+  "boards": [
+    {"company": "GitLab", "vendor": "greenhouse", "slug": "gitlab", "note": "fully remote; many roles are region-locked"},
+    {"company": "Supabase", "vendor": "ashby", "slug": "supabase", "note": "fully remote"},
+    {"company": "Pipedrive", "vendor": "lever", "slug": "pipedrive", "note": "EU SaaS"}
+  ],
+
+  "careers_pages": [
+    {"company": "Example Co", "url": "https://example.com/careers", "note": "no public feed; open in a browser", "carryover": false, "last_checked": null}
+  ]
+}

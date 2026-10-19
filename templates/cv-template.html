@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CV</title>
+<style>
+  /* Two-page A4 CV. Edit the colors and fonts, keep the break rules. */
+  @page { size: A4; margin: 13mm 16mm 12mm 16mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9.4pt; line-height: 1.38; color: #1d2129;
+  }
+  .name { font-size: 23pt; font-weight: 700; letter-spacing: .5px; color: #14324f; }
+  .contact { margin-top: 3pt; font-size: 8.8pt; color: #4a5361; }
+  .contact a { color: #4a5361; text-decoration: none; }
+  .contact span { color: #b9c0c9; padding: 0 4px; }
+  .headrule { border: 0; border-top: 2.2px solid #14324f; margin: 8pt 0 0; }
+  h2 {
+    break-after: avoid;
+    font-size: 9pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px;
+    color: #14324f; margin: 10.5pt 0 4pt; padding-bottom: 2.5pt; border-bottom: .8px solid #cdd4dc;
+  }
+  .summary { margin-top: 2pt; }
+  ul { list-style: none; }
+  li { padding-left: 11pt; position: relative; margin-bottom: 2.8pt; }
+  li::before { content: "▪"; position: absolute; left: 0; top: 0; color: #14324f; font-size: 8pt; }
+  .job { margin-bottom: 7pt; break-inside: avoid-page; }
+  .jobhead { display: flex; justify-content: space-between; align-items: baseline; }
+  .role { font-size: 10.3pt; font-weight: 700; }
+  .role .co { color: #14324f; }
+  .meta { font-size: 8.6pt; color: #6b7480; white-space: nowrap; padding-left: 12pt; }
+  .subline { font-size: 8.8pt; color: #6b7480; font-style: italic; margin: 1pt 0 3.5pt; }
+  .job ul { margin-top: 1pt; }
+  .twocol { display: flex; gap: 22pt; }
+  .twocol > div { flex: 1; }
+  .kv { margin-bottom: 3pt; }
+</style>
+</head>
+<body>
+
+<div class="name">FIRSTNAME LASTNAME</div>
+<div class="contact">
+  email@example.com <span>•</span> +00 0 00000000 <span>•</span>
+  <a href="https://www.linkedin.com/in/yourname/">linkedin.com/in/yourname</a> <span>•</span> City, Country
+</div>
+<hr class="headrule">
+
+<h2>Summary</h2>
+<p class="summary">
+  Three to five sentences. Years and field, the two or three results you lead with, the thing this posting's
+  must-haves are about, and where you live if the posting cares. Every number here is also in your proof file.
+</p>
+
+<h2>What I bring</h2>
+<ul>
+  <li><b>Must-have 1 from the posting, in your words.</b> The proof, with the number and where it happened.</li>
+  <li><b>Must-have 2.</b> Proof.</li>
+  <li><b>Must-have 3.</b> Proof.</li>
+  <li><b>Your differentiator.</b> The thing other applicants cannot say.</li>
+</ul>
+
+<h2>Experience</h2>
+
+<div class="job">
+  <div class="jobhead">
+    <div class="role"><span class="co">Company</span> · Title</div>
+    <div class="meta">City · Mon YYYY – Present</div>
+  </div>
+  <div class="subline">Scope in one line: what you owned, how big it was, who you worked with</div>
+  <ul>
+    <li>Result with a number</li>
+    <li>Result with a number</li>
+    <li>Responsibility that maps to a must-have</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="jobhead">
+    <div class="role"><span class="co">Company</span> · Title</div>
+    <div class="meta">City · Mon YYYY – Mon YYYY</div>
+  </div>
+  <div class="subline">Scope in one line</div>
+  <ul>
+    <li>Result with a number</li>
+    <li>Result with a number</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="jobhead">
+    <div class="role"><span class="co">Company</span> · Title (and earlier roles)</div>
+    <div class="meta">City · Mon YYYY – Mon YYYY</div>
+  </div>
+  <ul>
+    <li>Result with a number</li>
+  </ul>
+</div>
+
+<h2>Education, languages, tools</h2>
+<div class="twocol">
+  <div>
+    <div class="kv"><b>Education:</b> Degree, School, Year</div>
+    <div class="kv"><b>Languages:</b> Language (level) · Language (level)</div>
+  </div>
+  <div>
+    <div class="kv"><b>Tools:</b> the ones the posting names that you can actually use</div>
+    <div class="kv"><b>Other:</b> awards, certifications, side projects described the way your criteria file allows</div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+# System and Python artifacts
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Credentials (example env templates are safe to track)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Private working files; shipped *.template.* and *.example.* remain tracked
+job-hunt/
+search-criteria.md
+proof-file.md
+cv-master.md
+tracker.md
+rejected.md
+watchlist.json
+seen.json
+seen.json.*
+intake/
+samples/
+!examples/samples/
+!examples/samples/**
+packets/
+digests/
+drafts/
+polls/
+*.pdf
+*.docx
+*.pages
+*.zip
+*-preview-*.png
+*.tmp
